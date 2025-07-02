@@ -1,6 +1,8 @@
 import tkinter as tk
 from tkinter import messagebox
 from planner import WaypointManager
+from map_generator import generate_map
+
 
 
 class MissionPlannerGUI:
@@ -32,6 +34,7 @@ class MissionPlannerGUI:
 
         tk.Button(root, text="Add Waypoint", command=self.add_waypoint).grid(row=3, column=0, columnspan=2)
         tk.Button(root, text="Export to JSON", command=self.export_waypoints).grid(row=4, column=0, columnspan=2)
+        tk.Button(root, text="Show Map", command=self.show_map).grid(row=7, column=0, columnspan=2)
 
         # Listbox for displaying waypoints
         self.waypoint_list = tk.Listbox(root)
@@ -68,6 +71,13 @@ class MissionPlannerGUI:
         for i, wp in enumerate(self.manager.waypoints):
             entry = f"{i + 1}. {wp['name']} ({wp['lat']}, {wp['lon']})"
             self.waypoint_list.insert(tk.END, entry)
+
+    def show_map(self):
+        """Displays the current waypoints on an interactive OpenStreetMap map."""
+        if not self.manager.waypoints:
+            messagebox.showwarning("No Data", "No waypoints to display on map.")
+            return
+        generate_map(self.manager.waypoints)
 
 
 if __name__ == "__main__":
