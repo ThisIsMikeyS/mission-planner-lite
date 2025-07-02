@@ -9,10 +9,10 @@
 
 ## 📸 Screenshots
 
-### Tool GUI
+### 🧼 Tool GUI
 ![GUI Screenshot](images/gui-screenshot.png)
 
-### Display Map
+### 🗺️ Display Map
 ![Display Map Screenshot](images/map-screenshot.png)
 
 ---
