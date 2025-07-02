@@ -42,7 +42,8 @@ mission_planner_lite/
 ├── README.md # Project overview (this file)
 ├── LICENSE # MIT License
 └── images/
-└── screenshot.png # GUI image for GitHub preview
+└── gui-screenshot.png # GUI image for GitHub preview
+└── map-screenshot.png # Display map image for GitHub preview
 ```
 
 ---
