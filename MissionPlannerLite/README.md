@@ -9,7 +9,8 @@
 
 ## 📸 Screenshot
 
-![GUI Screenshot](images/screenshot.png)
+![GUI Screenshot](images/gui-screenshot.png)
+![Display Map Screenshot](images/map-screenshot.png)
 
 ---
 
