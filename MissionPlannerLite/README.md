@@ -19,12 +19,12 @@
 
 ## ✨ Features
 
-- 🧭 Add, view, and delete named waypoints with latitude and longitude
+- 🧭 Add, view, and delete named waypoints with latitude, longitude, and altitude (in meters)
 - 📤 Export waypoint lists to `.json` format
 - 🗺️ View waypoints on an interactive OpenStreetMap map (opens in browser)
-- 🧼 Simple GUI using Python Tkinter
-- ✅ Includes unit tests for both waypoint logic and map rendering
-- 💡 Easy to extend for mapping, routing, or altitude/distance support
+- ⏱ Estimate total flight time based on user-defined speed and waypoint distances (3D)
+- 🧼 Simple GUI using Python Tkinter (fixed layout, scrollable)
+- ✅ Includes unit tests for core logic, map rendering, and distance/time calculations
 
 ---
 
@@ -37,6 +37,7 @@ mission_planner_lite/
 ├── map_generator.py # Folium-based map rendering
 ├── test_planner.py # Unit tests for waypoint logic
 ├── test_map_generator.py # Unit test for map creation
+├── test_flight_calculator.py # Unit test for flight distance/time
 ├── waypoints.json # Sample export file
 ├── requirements.txt # Project dependencies
 ├── README.md # Project overview (this file)
@@ -85,9 +86,10 @@ python main.py
 ```
 
 Once the GUI is running, you can:
-- Add or delete waypoints
+- Add or delete waypoints (with optional altitude)
 - Export waypoints to `waypoints.json`
 - Click **Show Map** to open a visual map in your web browser with markers and paths
+- Click **Calculate Flight Time** to estimate total mission duration based on your input speed (in km/h)
 
 ---
 
@@ -130,7 +132,6 @@ OK
 ## 🛠️ Future Improvements
 
 - Import/export CSV
-- Altitude/time per waypoint
 - Path visualization
 - REST API or local DB support
 
