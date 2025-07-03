@@ -15,6 +15,12 @@
 ### 🗺️ Display Map
 ![Display Map Screenshot](images/map-screenshot.png)
 
+### 🚀 Window for Entering Average Flight Speed
+![Enter Speed Screenshot](images/speed-screenshot.png)
+
+### ⏱ Flight Time Estimate
+![Flight Time Screenshot](images/flight-time-screenshot.png)
+
 ---
 
 ## ✨ Features
