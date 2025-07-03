@@ -27,6 +27,7 @@
     <Compile Include="main.py" />
     <Compile Include="map_generator.py" />
     <Compile Include="planner.py" />
+    <Compile Include="test_flight_calculator.py" />
     <Compile Include="test_map_generator.py" />
     <Compile Include="test_planner.py" />
   </ItemGroup>
