@@ -1,5 +1,6 @@
 
 # 🗺️ Mission Planner Lite
+![Title Card](images/title-image.png)
 
 **Mission Planner Lite** is a lightweight, desktop-based waypoint management tool built with Python and Tkinter. Designed to simulate basic mission or route planning functionality, this application allows users to input, view, and export waypoints in a clean and user-friendly interface.
 
@@ -51,6 +52,9 @@ mission_planner_lite/
 └── images/
 └── gui-screenshot.png # GUI image for GitHub preview
 └── map-screenshot.png # Display map image for GitHub preview
+└── speed-screenshot.png # Enter speed window image for GitHub preview
+└── flight-time-screenshot.png # Estimated flight time window image for GitHub preview
+└── title-image.png # Mission Planner Lite title card
 ```
 
 ---
